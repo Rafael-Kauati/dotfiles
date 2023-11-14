@@ -1,0 +1,40 @@
+background yes
+alignment top_right
+cpu_avg_samples 4
+use_xft yes
+xftfont Andale Mono-11
+update_interval 0.5
+total_run_times 0
+update_interval_on_battery 10
+double_buffer yes
+own_window yes
+own_window_type override
+own_window_transparent yes
+default_bar_size 80 8
+gap_y 20
+gap_x 20
+use_spacer left
+pad_percents 3
+temperature_unit Celsius
+
+
+${color red}$alignc$kernel $sysname
+${color red} ${alignc}System: $nodename
+$alignc $gw_ip
+${hr}
+$alignc CPU Usage
+${hr}
+${color green}core_1: ${cpu cpu1}%  ${cpubar cpu1} ${freq_g 1}Ghz
+core_2: ${color green}${cpu cpu2}%  ${cpubar cpu2} ${freq_g 2}Ghz
+Temperature: ${acpitemp}C
+${color red}$hr
+$alignc Memory 
+$hr
+${color green}Total: $memmax
+In use: $mem 
+Free: $memfree	
+Using $memperc% ${membar memperc}
+${color red}$hr
+$alignc Battery 
+$hr
+${color green}${battery BAT1}

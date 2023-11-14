@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "$(sensors | grep "Tdie" | sed "s/Tdie: *+//;s/°C *//")°C"

@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../.config/i3"
+		},
+		{
+			"path": "../../../etc/polybar"
+		},
+		{
+			"path": "../../../etc/xdg/openbox"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.fontFamily": "'JetBrains Mono Light'"
+	}
+}
